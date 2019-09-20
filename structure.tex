@@ -1,0 +1,138 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Kristoffer Resume
+% Structural Definitions
+% Version 1.0 (19/09/2019)
+%
+% This template was created by:
+% Vel (enquiries@latextypesetting.com)
+% LaTeXTypesetting.com
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	REQUIRED PACKAGES AND MISC CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\usepackage{graphicx} % Required for including images
+\graphicspath{{Figures/}{./}} % Specifies where to look for included images (trailing slash required)
+
+\setlength{\parindent}{0pt} % Suppress paragraph indentation
+
+\usepackage{tabto} % Required for tabbing
+\TabPositions{7cm, 10cm} % Specify fixed tab indents used by the \tab command
+
+\usepackage{changepage} % Required for temporarily indenting text blocks
+
+\raggedright % Left align all text (i.e. suppress justification)
+
+\usepackage{lastpage} % Required to determine the total number of pages
+
+%----------------------------------------------------------------------------------------
+%	MARGINS
+%----------------------------------------------------------------------------------------
+
+\usepackage[
+	letterpaper, % Paper size
+	top=2.5cm, % Top margin
+	bottom=2.5cm, % Bottom margin
+	inner=3cm, % Inner margin
+	outer=3cm, % Outer margin
+	footskip=1.4cm, % Space from the bottom margin to the baseline of the footer
+	headsep=0.8cm, % Space from the top margin to the baseline of the header
+	headheight=0.5cm, % Height of the header
+	%showframe % Uncomment to show the frames around the margins for debugging purposes
+]{geometry}
+
+%----------------------------------------------------------------------------------------
+%	FONTS
+%----------------------------------------------------------------------------------------
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage{palatino} % Use the Palatino font as the body font
+\usepackage[extrabold]{raleway} % Use the extrabold weight of Raleway as the sans font
+
+% To use the Copperplate Gothic Bold font, you will need to use XeLaTeX which will use it if it is installed in your operating system.
+% Comment the lines above in this block and uncomment the lines below in order to switch to using XeLaTeX (read the comments carefully when uncommenting to know which of the 2 Copperplate lines to uncomment).
+% You will need to compile the template with xelatex after doing this.
+
+%\usepackage{fontspec} % Required for specifying custom fonts
+
+%\setmainfont{Palatino} % Sets Palatino as main font, must be installed on the system compiling the document
+
+%\setsansfont{Copperplate} % Note: Copperplate Gothic Bold does not come with macOS so I can't test that this works, but Copperplate does come with macOS and works after uncommenting this line. DO NOT uncomment this line if using Copperplate Gothic Bold.
+
+%\setsansfont{Copperplate Gothic Bold} % Note: you may need to take out the \bfseries from the definition of \resumename as this font has bold as the regular variant of the font and doesn't have a bold variant. Do this only if you run into problems with using the font.
+
+%----------------------------------------------------------------------------------------
+%	HEADERS AND FOOTERS
+%----------------------------------------------------------------------------------------
+
+\usepackage{fancyhdr} % Required for customising headers and footers
+\pagestyle{fancy} % Enable custom headers and footers
+
+\renewcommand{\headrulewidth}{0pt} % Remove default top horizontal rule
+
+\fancyhf{} % Clear default headers/footers
+
+\fancyfoot[L]{\footnotesize Updated \updated} % Left side footer
+\fancyfoot[R]{\small\thepage~of \pageref{LastPage}} % Right side footer
+
+%----------------------------------------------------------------------------------------
+%	SECTIONS
+%----------------------------------------------------------------------------------------
+
+\usepackage{titlesec} % Required for modifying sections
+
+%------------------------------------------------
+
+\titleformat
+	{\section} % Section type being modified
+	[block] % Shape type, can be: hang, block, display, runin, leftmargin, rightmargin, drop, wrap, frame
+	{\LARGE\bfseries} % Format of the whole section
+	{} % Format of the section label
+	{0pt} % Space between the title and label
+	{} % Code before the label
+	[] % Code after the label
+
+\titlespacing{\section}{0pt}{10pt}{0pt} % Spacing around section titles, the order is: left, before and after
+
+%----------------------------------------------------------------------------------------
+%	CUSTOM STYLING
+%----------------------------------------------------------------------------------------
+
+\newenvironment{indented}{ % Environment for indenting blocks of text on the left
+	\begin{adjustwidth}{20pt}{0pt} % Specify left indent for indented sections
+}{
+	\end{adjustwidth}
+}
+
+\newcommand{\jobtitle}[1]{{\large #1}} % Style the job title
+
+\newcommand{\resumename}[1]{{\centering\Huge\sffamily\bfseries\textsc{#1}\par}} % Style the resume name
+
+%----------------------------------------------------------------------------------------
+%	LISTS
+%----------------------------------------------------------------------------------------
+
+\usepackage{enumitem} % Required for list customisation
+
+\setlist{itemsep=0pt, topsep=0pt, leftmargin=*} % Customise lists with no separating around them, inside them and no left margin
+
+%----------------------------------------------------------------------------------------
+%	LINKS
+%----------------------------------------------------------------------------------------
+
+\usepackage{hyperref} % Required for links
+
+\hypersetup{
+	colorlinks=false, % Suppress coloring of links
+	hidelinks, % Hide the default boxes around links
+}
+
+%----------------------------------------------------------------------------------------
+%	CUSTOM COMMANDS
+%----------------------------------------------------------------------------------------
+
+\newcommand{\updated}[1]{\renewcommand{\updated}{#1}}
