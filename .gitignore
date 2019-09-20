@@ -3,6 +3,7 @@
 *.log
 *.out
 *.pdf
+*.synctex.gz
 
 
 # Created by https://www.gitignore.io/api/vim,emacs,linux
