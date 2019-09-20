@@ -27,6 +27,8 @@
 
 \usepackage{lastpage} % Required to determine the total number of pages
 
+\usepackage{moresize}
+
 %----------------------------------------------------------------------------------------
 %	MARGINS
 %----------------------------------------------------------------------------------------
@@ -47,23 +49,23 @@
 %	FONTS
 %----------------------------------------------------------------------------------------
 
-\usepackage[utf8]{inputenc} % Required for inputting international characters
-\usepackage[T1]{fontenc} % Output font encoding for international characters
-
-\usepackage{palatino} % Use the Palatino font as the body font
-\usepackage[extrabold]{raleway} % Use the extrabold weight of Raleway as the sans font
+%\usepackage[utf8]{inputenc} % Required for inputting international characters
+%\usepackage[T1]{fontenc} % Output font encoding for international characters
+%
+%\usepackage{palatino} % Use the Palatino font as the body font
+%\usepackage[extrabold]{raleway} % Use the extrabold weight of Raleway as the sans font
 
 % To use the Copperplate Gothic Bold font, you will need to use XeLaTeX which will use it if it is installed in your operating system.
 % Comment the lines above in this block and uncomment the lines below in order to switch to using XeLaTeX (read the comments carefully when uncommenting to know which of the 2 Copperplate lines to uncomment).
 % You will need to compile the template with xelatex after doing this.
 
-%\usepackage{fontspec} % Required for specifying custom fonts
+\usepackage{fontspec} % Required for specifying custom fonts
 
-%\setmainfont{Palatino} % Sets Palatino as main font, must be installed on the system compiling the document
+\setmainfont{TeX Gyre Pagella} % Sets Palatino as main font, must be installed on the system compiling the document
 
 %\setsansfont{Copperplate} % Note: Copperplate Gothic Bold does not come with macOS so I can't test that this works, but Copperplate does come with macOS and works after uncommenting this line. DO NOT uncomment this line if using Copperplate Gothic Bold.
 
-%\setsansfont{Copperplate Gothic Bold} % Note: you may need to take out the \bfseries from the definition of \resumename as this font has bold as the regular variant of the font and doesn't have a bold variant. Do this only if you run into problems with using the font.
+\setsansfont{CopprplGoth Hv BT} % Note: you may need to take out the \bfseries from the definition of \resumename as this font has bold as the regular variant of the font and doesn't have a bold variant. Do this only if you run into problems with using the font.
 
 %----------------------------------------------------------------------------------------
 %	HEADERS AND FOOTERS
@@ -110,7 +112,7 @@
 
 \newcommand{\jobtitle}[1]{{\large #1}} % Style the job title
 
-\newcommand{\resumename}[1]{{\centering\Huge\sffamily\bfseries\textsc{#1}\par}} % Style the resume name
+\newcommand{\resumename}[1]{{\centering\HUGE\sffamily{#1}\par}} % Style the resume name
 
 %----------------------------------------------------------------------------------------
 %	LISTS
