@@ -1,3 +1,3 @@
 #!/bin/bash
 
-xelatex "Kristoffer David Knigga - Resume.pdf"
+xelatex "Kristoffer David Knigga - Resume.tex"
