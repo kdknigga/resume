@@ -3,6 +3,7 @@
 *.log
 *.out
 *.pdf
+*.bak
 *.synctex.gz
 
 
