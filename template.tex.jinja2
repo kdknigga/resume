@@ -1,0 +1,129 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Kristoffer Resume
+% LaTeX Template
+% Version 1.0 (19/09/2019)
+%
+% This template was created by:
+% Vel (enquiries@latextypesetting.com)
+% LaTeXTypesetting.com
+%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{extarticle} % Default font size of 9pt
+
+\title{Kristoffer David Knigga}
+\author{Kristoffer Knigga}
+
+\input{structure.tex} % Include the file specifying the document structure and custom commands
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\updated{((( today | date_fmt('%B %d, %Y') )))} % The updated date to appear in the footer
+
+%----------------------------------------------------------------------------------------
+%	HEADER
+%----------------------------------------------------------------------------------------
+
+\invisiblesection{Kristoffer David Knigga}
+\resumename{Kristoffer David Knigga}
+
+3414 Parkside Drive, Woodridge, IL 60517 \hfill --- \hfill c. \href{tel:765-357-4735}{765-357-4735} \hfill --- \hfill e. \href{mailto:kris@knigga.com}{kris@knigga.com}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL EXPOSURE
+%----------------------------------------------------------------------------------------
+
+\section{Technical Exposure}
+
+\textit{Hardware}: ((* for item in hardware if not (condensed and item.condensed) *))((( item.name )))((* if not loop.last *)); ((* endif *))((* endfor *))
+
+\bigskip
+
+\textit{Operating Systems}: ((* for item in operating_systems if not (condensed and item.condensed) *))((( item.name )))((* if not loop.last *)); ((* endif *))((* endfor *))
+
+\bigskip
+
+\textit{Applications}: ((* for item in applications if not (condensed and item.condensed) *))((( item.name )))((* if not loop.last *)); ((* endif *))((* endfor *))
+
+\bigskip
+
+\textit{Public Cloud}: ((* for item in cloud if not (condensed and item.condensed) *))((( item.name )))((* if not loop.last *)); ((* endif *))((* endfor *))
+
+\bigskip
+
+\textit{Programming / Scripting}: ((* for item in programming if not (condensed and item.condensed) *))((( item.name )))((* if not loop.last *)); ((* endif *))((* endfor *))
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+((* for employer in experience if not (condensed and employer.condensed) *))
+\begin{minipage}[c]{\textwidth}
+    ((( employer.name ))) \hfill ((( employer.city_st )))
+
+	\begin{indented}
+	    ((* for job in employer.positions if not (condensed and job.condensed) *))
+	    	((* for daterange in job.dates *))
+				((* if loop.first *))
+		\jobtitle{(((job.title )))} \hfill ((( daterange.start_date | date_fmt ))) -- ((* if daterange.end_date > today *))Present((* else *))((( daterange.end_date | date_fmt )))((* endif *))\\
+				((* else *))
+		\tab \hfill ((( daterange.start_date | date_fmt ))) -- ((( daterange.end_date | date_fmt )))\\
+				((* endif *))
+	    	((* endfor *))
+		\textit{((( job.summary )))}
+		((* for highlight in job.highlights if not (condensed and highlight.condensed) *))
+		((* if loop.first *))\begin{itemize}((* endif *))
+			\item ((( highlight.text )))
+		((* if loop.last *))\end{itemize}((* endif *))
+		((* endfor *))
+	    ((* endfor *))
+	\end{indented}
+\end{minipage}
+
+((* if not loop.last *))
+\bigskip
+((* endif *))
+
+((* endfor *))
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS, CLEARANCES AND CLASSES
+%----------------------------------------------------------------------------------------
+
+\section{Certifications, Clearances, and Classes}
+
+\begin{indented}
+	\begin{itemize}
+	((* for course in courses if not (condensed and course.condensed)*))
+		\item ((( course.name ))) -- ((( course.date | date_fmt )))
+	((* endfor *))
+	\end{itemize}
+\end{indented}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+((* for degree in education if not (condensed and degree.condensed) *))
+((( degree.college ))) \tab ((( degree.city_st ))) \hfill ((( degree.dates.start_date | date_fmt ))) -- ((( degree.dates.end_date | date_fmt )))\\
+\begin{indented}
+	Major: ((( degree.major ))) \tabto{8cm} Degree: ((( degree.degree )))
+\end{indented}
+
+((* if not loop.last *))
+\bigskip
+((* endif *))
+
+((* endfor *))
+
+\end{document}

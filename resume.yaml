@@ -1,0 +1,373 @@
+hardware:
+  entries:
+  - condensed: false
+    name: HP(E) Apollo, ProLiant, BladeSystem, Superdome X, 9000, and Integrity servers
+  - condensed: false
+    name: IBM RS6000/System p/Power servers
+  - condensed: false
+    name: Dell servers and disk enclosures
+  - condensed: false
+    name: white box/custom servers and workstations
+  - condensed: true
+    name: Cobalt RaQ
+  - condensed: false
+    name: Myricom and Chelsio 10 Gbps NICs
+  - condensed: false
+    name: Solarflare and Mellanox 10/25 Gbps NICs
+  - condensed: false
+    name: Mellanox InfiniBand HCAs
+  - condensed: false
+    name: HP 3Par disk arrays
+  - condensed: false
+    name: NetApp filers
+  - condensed: false
+    name: EMC CLARiiON CX and Symmetrix DMX and VMAX arrays
+  - condensed: false
+    name: HP VA and EVA arrays
+  - condensed: false
+    name: HP Nike and MSA disk enclosures
+  - condensed: false
+    name: HP, Quantum, and Sony tape libraries
+  - condensed: false
+    name: Emulex and Qlogic FC HBAs
+  - condensed: false
+    name: Cisco and Arista managed switches
+  - condensed: false
+    name: Cisco routers and PIX firewalls
+  - condensed: false
+    name: Cisco Fibre Channel switches
+  - condensed: false
+    name: Cielo SkyLink CG/CGX radios and Mercury repeaters
+operating_systems:
+  entries:
+  - condensed: false
+    name: "Red Hat Enterprise Linux (and clones) 3 \u2013 9"
+  - condensed: false
+    name: "Fedora 4 \u2013 36"
+  - condensed: false
+    name: HP-UX 11.0, 11.11, 11.23, and 11.31
+  - condensed: false
+    name: AIX 5L and V6
+  - condensed: false
+    name: Solaris 9 and 10
+  - condensed: false
+    name: VMware ESX 4
+  - condensed: false
+    name: Microsoft NT 4, 2000, XP, Server 2003, and Server 2008
+applications:
+  entries:
+  - condensed: false
+    name: PTPv2/IEEE 1588-2008
+  - condensed: false
+    name: Chef
+  - condensed: false
+    name: Puppet
+  - condensed: false
+    name: Foreman
+  - condensed: false
+    name: Solarflare OpenOnload
+  - condensed: false
+    name: Red Hat Satellite/Spacewalk, Kickstart, and Cluster Suite
+  - condensed: false
+    name: HP Serviceguard, Integrity Virtual Machines, Ignite-UX, MirrorDisk-UX, DRD, SD-UX, Data Protector, OpenView, and Systems Insight Manager
+  - condensed: false
+    name: VERITAS Storage Foundation (VxVM and VxFS), Cluster Server, NetBackup, and Backup Exec
+  - condensed: false
+    name: Zabbix
+  - condensed: false
+    name: Grafana
+  - condensed: false
+    name: Elastic Search, Logstash, and Kibana
+  - condensed: false
+    name: EMC Powerpath, Solutions Enabler, Time Finder, NaviCLI, and SnapView
+  - condensed: false
+    name: Oracle Database 8, 9, 10, and 11
+  - condensed: false
+    name: BigBrother
+  - condensed: false
+    name: Commvault Galaxy
+  - condensed: true
+    name: Dell OpenManage
+  - condensed: true
+    name: MediaHouse Enterprise Monitor
+  - condensed: false
+    name: Intersystems Cache
+  - condensed: false
+    name: Kerberos 5
+  - condensed: false
+    name: LDAP
+  - condensed: false
+    name: DHCP
+  - condensed: false
+    name: BIND
+  - condensed: false
+    name: Postfix
+  - condensed: false
+    name: Sendmail
+  - condensed: false
+    name: Apache
+  - condensed: false
+    name: Squid
+  - condensed: false
+    name: PostgreSQL
+  - condensed: false
+    name: MySQL/MariaDB
+  - condensed: false
+    name: Samba
+  - condensed: false
+    name: NFS
+  - condensed: false
+    name: Microsoft Exchange, IIS, SQL Server, and Active Directory
+  - condensed: false
+    name: BittWorks II Toolkit
+  - condensed: false
+    name: KVM
+  - condensed: false
+    name: Docker
+  - condensed: false
+    name: Podman
+  - condensed: true
+    name: Ontario Systems FACS
+  - condensed: true
+    name: Barracuda Spam Firewall
+  - condensed: true
+    name: Websense
+  - condensed: true
+    name: RSA SecureID
+  - condensed: true
+    name: Mailman
+  - condensed: true
+    name: IceWarp Merak Email Server
+  - condensed: true
+    name: Ipswitch IMail
+  - condensed: true
+    name: jabber
+  - condensed: False
+    name: \LaTeX{}
+programming:
+  entries:
+  - condensed: false
+    name: POSIX shell
+  - condensed: false
+    name: awk
+  - condensed: false
+    name: sed
+  - condensed: false
+    name: python
+  - condensed: false
+    name: PHP
+  - condensed: true
+    name: Java
+  - condensed: true
+    name: perl
+  - condensed: false
+    name: SQL
+  - condensed: true
+    name: Visual Basic 6
+  - condensed: false
+    name: ruby (Puppet and Chef)
+cloud:
+  entries:
+  - condensed: false
+    name: Amazon Web Services (EC2, Elastic Beanstalk, S3, RDS, CloudWatch, Lambda, API Gateway, Route53, EFS)
+  - condensed: false
+    name: Google Cloud Platform (Compute Engine, Spanner)
+experience:
+- condensed: false
+  name: Trading Technologies
+  city_st: Chicago, IL
+  positions:
+  - condensed: false
+    title: Linux Systems Architect
+    dates:
+    - start_date: 2015-02-01
+      end_date: 2100-01-01
+    summary: Linux and server-hardware subject matter expert providing guidance and thought-leadership in a leading futures trading software and services provider
+    highlights:
+    - condensed: false
+      text: Defined best practices and standard operating procedures for building and administering low-latency Linux servers
+    - condensed: false
+      text: Sought-out and evaluated new and novel stratagies and technologies
+    - condensed: false
+      text: Worked with development teams to identify and eliminate sources of latency in software
+- condensed: false
+  name: Chopper Trading
+  city_st: Chicago, IL
+  positions:
+  - condensed: false
+    title: Linux Administrator
+    dates:
+    - start_date: 2012-06-01
+      end_date: 2015-01-01
+    summary: Managed hundreds of Linux servers in a latency-sensitive high frequency trading environment across dozens of geographic locations
+    highlights:
+    - condensed: false
+      text: Implemented Active Directory authentication on Linux machines using pure krb5 and ldap
+    - condensed: false
+      text: Developed, tested, and implemented sub-millisecond time synchronization across geographically- distant data centers
+    - condensed: false
+      text: Revived long-neglected Puppet deployment and implemented numerous changes to improve stability and functionality
+    - condensed: false
+      text: Implemented iPXE and Syslinux/PXELINUX solution to improve remote hardware deployment
+    - condensed: false
+      text: Tuned Linux for low application and network latency
+    - condensed: false
+      text: Taught end-users and junior administrators “how to fish” when possible thereby reducing support requests and escalations
+- condensed: false
+  name: Molex
+  city_st: Lisle, IL
+  positions:
+  - condensed: false
+    title: \textsc{Unix} Contractor
+    dates:
+    - start_date: 2011-05-01
+      end_date: 2012-05-01
+    summary: Provided \textsc{Unix} and storage consulting, administration, and engineering services on a contract basis.
+    highlights:
+    - condensed: false
+      text: Managed highly visible and critical projects, including liaising with key management stakeholders
+    - condensed: false
+      text: Extended Red Hat Cluster Suite ipmilan fence agent to support IPMI privilege levels
+    - condensed: false
+      text: Developed procedures for RHEL server build-out including custom scripting to provide automation
+    - condensed: false
+      text: Wrote application to track backup tape usage to reduce backup failures due to overused media
+    - condensed: false
+      text: Trained and mentored other administrators and operators on new technology and procedures
+    - condensed: false
+      text: Designed and implemented strategies for downtimeless database backups
+    - condensed: false
+      text: Designed highly available, load-balanced print cluster to manage 1000+ printers and serve dozens of print clients running SAP
+- condensed: false
+  name: Fidelity National Information Services
+  city_st: Chicago, IL
+  positions:
+  - condensed: false
+    title: Systems Administrator
+    dates:
+    - start_date: 2008-12-01
+      end_date: 2011-05-01
+    summary: Primary administrator in charge of \textsc{Unix} servers for a Fortune Global 500 client. Secondary administrator for a dozen other clients. Coordinated technology delivery teams to provide solutions and support. Implemented technology and process improvements to improve administrator efficiency.
+    highlights:
+    - condensed: true
+      text: Designed and implemented Spacewalk and Spacewalk Proxy infrastructure managing servers in three geographical locations, including custom scripting to increase automation
+    - condensed: true
+      text: Created and executed project plan for complex technology refresh involving hardware, OS, and cluster upgrades exceeding client's expectations for quality of work and downtime
+    - condensed: true
+      text: Quickly learned and documented decade-old and largely undocumented BCV-based backup and database refresh process greatly improving supportability and decreasing mean time to repair
+    - condensed: true
+      text: Wrote cross-platform shell script to provide a simple and consistent menu system for user account administration tasks in order to offload user administration to helpdesk
+    - condensed: true
+      text: Go-to person for new client onboarding due to customer interaction skills and rapid learning ability
+- condensed: false
+  name: SallieMae Asset Performance Group
+  city_st: Niles, IL
+  positions:
+  - condensed: false
+    title: Systems Administrator
+    dates:
+    - start_date: 2007-06-01
+      end_date: 2008-12-01
+    summary: Maintained HP-UX, Red Hat Enterprise Linux, and Windows servers in support of an application that generated over \$200 Million in annual revenue. Worked with diverse teams to deploy, tune, and troubleshoot new and existing systems. Generated system documentation and defined SOPs.
+    highlights:
+    - condensed: true
+      text: Sole administrator in charge of day-to-day operations for up to 55 critical production \textsc{Unix} servers
+    - condensed: true
+      text: Worked with storage team and vendor to plan and execute migrations from EMC CLARiiON to EMC Symmetrix DMX array resulting in 30\% increase in performance for critical applications
+    - condensed: true
+      text: Wrote scripts to manage array-based clone technology for backups of production environments
+    - condensed: true
+      text: Planned and performed operating system upgrades of critical servers without downtime to business
+    - condensed: true
+      text: Automated monitoring process to ensure health of DR data
+    - condensed: true
+      text: Lead a team in a massive network re-addressing project with 100\% transparency to end users
+- condensed: false
+  name: Jones Business Integrations
+  city_st: Ladoga, IN
+  positions:
+  - condensed: false
+    title: Co-Owner
+    dates:
+    - start_date: 2005-01-01
+      end_date: 2006-09-01
+    summary: Co-owned web hosting and web application development company that catered mainly to small businesses.
+    highlights:
+    - condensed: true
+      text: Migrated network and servers from office back room to collocation center
+    - condensed: true
+      text: Worked with customer to design custom content management system tailored to livestock breeders
+- condensed: false
+  name: 1up! Software
+  city_st: Kokomo, IN
+  positions:
+  - condensed: false
+    title: Network Administrator
+    dates:
+    - start_date: 2003-05-01
+      end_date: 2004-08-01
+    - start_date: 2005-05-01
+      end_date: 2005-08-01
+    summary: Administered network equipment and servers for a company providing web presence solutions to small publishing companies.
+    highlights:
+    - condensed: true
+      text: Migrated customer-facing servers from in-office server room to collocation center
+    - condensed: true
+      text: Overhauled backup systems and strategies to cope with rapidly growing capacity demands
+    - condensed: true
+      text: Wrote custom application to monitor for and alert on system errors
+    - condensed: true
+      text: Configured and maintained networking equipment including switches, routers, and firewalls
+    - condensed: true
+      text: Built, configured, and maintained web, database, email, DNS, and other infrastructural servers
+courses:
+- condensed: false
+  name: HP BladeSystem Administration course
+  date: 2012-01-01
+- condensed: false
+  name: VERITAS NetBackup 6.5 Fundamentals course
+  date: 2008-11-01
+- condensed: false
+  name: Red Hat Enterprise Clustering and Storage Management course
+  date: 2008-10-01
+- condensed: false
+  name: Red Hat Linux Networking and Security Administration course
+  date: 2008-09-01
+- condensed: false
+  name: IRS High Risk Public Trust security clearance
+  date: 2008-10-01
+- condensed: false
+  name: Microsoft Certified Systems Engineer
+  date: 2007-11-01
+- condensed: true
+  name: Microsoft Windows Server 2003 Troubleshooting course
+  date: 2007-10-01
+- condensed: true
+  name: Commvault System Administration and Engineering course
+  date: 2007-08-01
+- condensed: true
+  name: Microsoft Certified Systems Engineer
+  date: 2003-05-01
+- condensed: true
+  name: A+ Certified Professional
+  date: 2003-04-01
+- condensed: false
+  name: Cisco Certified Network Associate
+  date: 2002-04-01
+education:
+- condensed: false
+  college: Purdue University
+  city_st: West Lafayette, IN
+  dates:
+    start_date: 2004-08-01
+    end_date: 2007-05-01
+  major: Psychology
+  degree: Bachelor of Arts
+- condensed: false
+  college: Vincennes University
+  city_st: Vincennes, IN
+  dates:
+    start_date: 2001-08-01
+    end_date: 2003-05-01
+  major: Computer Networking Technology
+  degree: Associate of Applied Science
