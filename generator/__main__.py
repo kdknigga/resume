@@ -7,8 +7,8 @@ import jinja2
 from .models import Resume
 
 
-def date_format(d: datetime.date, format: str = "%B %Y"):
-    return d.strftime(format)
+def date_format(d: datetime.date, format_str: str = "%B %Y"):
+    return d.strftime(format_str)
 
 
 def main(yaml_file: str) -> None:

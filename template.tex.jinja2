@@ -70,21 +70,32 @@
     ((( employer.name ))) \hfill ((( employer.city_st )))
 
 	\begin{indented}
-	    ((* for job in employer.positions if not (condensed and job.condensed) *))
-	    	((* for daterange in job.dates *))
-				((* if loop.first *))
+	((* for job in employer.positions if not (condensed and job.condensed) *))
+	  	((* for daterange in job.dates *))
+			((* if loop.first *))
 		\jobtitle{(((job.title )))} \hfill ((( daterange.start_date | date_fmt ))) -- ((* if daterange.end_date > today *))Present((* else *))((( daterange.end_date | date_fmt )))((* endif *))\\
-				((* else *))
+			((* else *))
 		\tab \hfill ((( daterange.start_date | date_fmt ))) -- ((( daterange.end_date | date_fmt )))\\
-				((* endif *))
-	    	((* endfor *))
+			((* endif *))
+	   	((* endfor *))
+		((* if job.summary is not none *))
 		\textit{((( job.summary )))}
-		((* for highlight in job.highlights if not (condensed and highlight.condensed) *))
-		((* if loop.first *))\begin{itemize}((* endif *))
+		((* endif *))
+		((* if job.highlights is not none*))
+			((* for highlight in job.highlights if not (condensed and highlight.condensed) *))
+				((* if loop.first *))
+		\begin{itemize}
+				((* endif *))
 			\item ((( highlight.text )))
-		((* if loop.last *))\end{itemize}((* endif *))
-		((* endfor *))
-	    ((* endfor *))
+				((* if loop.last *))
+		\end{itemize}
+				((* endif *))
+			((* endfor *))
+		((* endif *))
+		((* if loop.length > 1 and not loop.last *))
+		\medskip
+		((* endif *))
+	((* endfor *))
 	\end{indented}
 \end{minipage}
 

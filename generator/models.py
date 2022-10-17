@@ -34,8 +34,8 @@ class JobHighlight(BaseModel):
 class Job(BaseModel):
     title: str
     dates: List[DateRange]
-    summary: str
-    highlights: List[JobHighlight]
+    summary: Optional[str]
+    highlights: Optional[List[JobHighlight]]
 
 
 class Employer(BaseModel):

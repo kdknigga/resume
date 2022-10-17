@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 poetry run python -m generator resume.yaml
 
