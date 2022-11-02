@@ -182,16 +182,18 @@ experience:
     dates:
     - start_date: 2015-02-01
       end_date: 2100-01-01
-    summary: Linux and server-hardware subject matter expert providing guidance and thought-leadership in a leading futures trading software and services provider
+    summary: Linux and server-hardware subject matter expert providing guidance and thought-leadership in a leading trading SaaS provider
     highlights:
     - condensed: false
       text: Defined best practices and standard operating procedures for building and administering low-latency Linux servers
     - condensed: false
-      text: Sought-out and evaluated new and novel strategies and technologies
+      text: Collaborated with development teams to identify and eliminate sources of latency in software
     - condensed: false
-      text: Worked with development teams to identify and eliminate sources of latency in software
+      text: Worked with vendors to evaluate infrastructure hardware, software, and services to drive performance improvements, operational efficiencies, and cost savings
+    - condensed: false
+      text: Acted as third-level support, providing an escalation point for operations teams
 - condensed: true
-  name: Businessmen’s Flying Club
+  name: Businessmen's Flying Club
   city_st: Naperville, IL
   positions:
   - condensed: false
