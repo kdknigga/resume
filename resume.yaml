@@ -415,6 +415,12 @@ experience:
     - condensed: false
       text: Built and maintained online curriculum server 
 courses:
+- condensed: true
+  name: Federal Aviation Administration - Private Pilot - Instrument, Airplane
+  date: 2018-06-24
+- condensed: true
+  name: Federal Aviation Administration - Private Pilot - Airplane, Single Engine, Land
+  date: 2015-07-23
 - condensed: false
   name: HP BladeSystem Administration course
   date: 2012-01-01
