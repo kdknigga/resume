@@ -7,11 +7,11 @@ authors = ["Kris Knigga <kris@knigga.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 Jinja2 = "^3.1.2"
-pydantic-yaml = "^0.8.0"
+pydantic-yaml = {extras = ["pyyaml"], version = "^0.8.1"}
 
 [tool.poetry.dev-dependencies]
 black = "^22.8.0"
-prospector = {extras = ["with_mypy", "with_bandit"], version = "^1.7.7"}
+prospector = {extras = ["with_mypy", "with_bandit"], version = "1.7.7"}
 ipython = "^8.5.0"
 
 [build-system]
