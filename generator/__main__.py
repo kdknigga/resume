@@ -1,18 +1,24 @@
+"""Main entry point for resume generator."""
+
 import datetime
 import logging
-import os
+from pathlib import Path
 
 import jinja2
 
 from .models import Resume
 
+log = logging.getLogger(__name__)
 
-def date_format(d: datetime.date, format_str: str = "%B %Y"):
+
+def date_format(d: datetime.date, format_str: str = "%B %Y") -> str:
+    """Format a date."""
     return d.strftime(format_str)
 
 
 def main(yaml_file: str) -> None:
-    logging.debug("Processing YAML file: %s", yaml_file)
+    """Generate LaTeX resume from YAML file."""
+    log.debug("Processing YAML file: %s", yaml_file)
     resume = Resume.parse_file(yaml_file)
 
     latex_jinja_env = jinja2.Environment(
@@ -26,15 +32,15 @@ def main(yaml_file: str) -> None:
         line_comment_prefix="%#",
         trim_blocks=True,
         lstrip_blocks=True,
-        autoescape=False,
-        loader=jinja2.FileSystemLoader(os.path.abspath(".")),
+        autoescape=False,  # noqa: S701
+        loader=jinja2.FileSystemLoader(searchpath=Path.cwd()),
     )
 
     latex_jinja_env.filters["date_fmt"] = date_format
     template = latex_jinja_env.get_template("template.tex.jinja2")
 
-    logging.debug("Writing resume-full.tex")
-    with open("resume-full.tex", "wt", encoding="utf-8") as f:
+    log.debug("Writing resume-full.tex")
+    with Path("resume-full.tex").open("w", encoding="utf-8") as f:
         f.write(
             template.render(
                 condensed=False,
@@ -50,8 +56,8 @@ def main(yaml_file: str) -> None:
             )
         )
 
-    logging.debug("Writing resume-condensed.tex")
-    with open("resume-condensed.tex", "wt", encoding="utf-8") as f:
+    log.debug("Writing resume-condensed.tex")
+    with Path("resume-condensed.tex").open("w", encoding="utf-8") as f:
         f.write(
             template.render(
                 condensed=True,
