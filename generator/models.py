@@ -1,12 +1,10 @@
 """Models for resume data."""
 
-from typing import TYPE_CHECKING
+from datetime import (
+    date,  # noqa: TC003 # date is needed outside of type checking for Pydantic
+)
 
 from pydantic import BaseModel as PydanticBaseModel
-from pydantic_yaml import YamlModel
-
-if TYPE_CHECKING:
-    from datetime import date
 
 
 class BaseModel(PydanticBaseModel):
@@ -50,8 +48,8 @@ class Job(BaseModel):
 
     title: str
     dates: list[DateRange]
-    summary: str | None
-    highlights: list[JobHighlight] | None
+    summary: str | None = None
+    highlights: list[JobHighlight] | None = None
 
 
 class Employer(BaseModel):
@@ -74,7 +72,7 @@ class TechCategory(PydanticBaseModel):
     entries: list[Tech]
 
 
-class Resume(YamlModel):
+class Resume(PydanticBaseModel):
     """A resume model."""
 
     hardware: TechCategory

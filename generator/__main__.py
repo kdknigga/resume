@@ -5,6 +5,7 @@ import logging
 from pathlib import Path
 
 import jinja2
+import yaml
 
 from .models import Resume
 
@@ -19,7 +20,8 @@ def date_format(d: datetime.date, format_str: str = "%B %Y") -> str:
 def main(yaml_file: str) -> None:
     """Generate LaTeX resume from YAML file."""
     log.debug("Processing YAML file: %s", yaml_file)
-    resume = Resume.parse_file(yaml_file)
+    with Path(yaml_file).open("r", encoding="utf-8") as yf:
+        resume = Resume.model_validate(yaml.safe_load(yf))
 
     latex_jinja_env = jinja2.Environment(
         block_start_string="((*",

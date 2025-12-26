@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-poetry run python -m generator resume.yaml
+uv run python -m generator -l debug resume.yaml
 
 # Run twice so the page counter can work
 xelatex resume-full.tex
@@ -18,4 +18,3 @@ cp resume-condensed.pdf kdkresume.pdf
 rm resume-full.tex resume-condensed.tex
 rm resume-full.log resume-condensed.log
 rm resume-full.aux resume-full.out resume-condensed.aux resume-condensed.out
-
